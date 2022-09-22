@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Game Maker</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+
+
+    <div class="welcomeDiv">
+
+    <div>
+
+    <div class="canvasDiv">
+
+        <div>
+            <h3 class="gameName" id="gameNameTitle">&ltGame name goes here&gt</h3>
+            <p class="gameClock" id="gameClock">Time Elapsed: 0</p>
+        </div>
+        <canvas id="gameMaker" height="500" width="800">
+        </canvas>
+    </div>
+    <div class="gameMakerDiv">
+        <div class="center-items" id="row1">
+            <button id="gameProperties" class="control-buttons">Game Properties</button>
+            <button id="createSprite" class="control-buttons">Create Sprite</button>
+            <button id="createEvent" class="control-buttons">Create Event</button>
+            <button id="saveProgress" class="control-buttons">Save Progress</button>
+            <button id="loadGameMaker" class="control-buttons">Load File</button>
+        </div>
+        <div class="center-items">
+            <button id="buildGame" class="control-buttons row2">Build Game</button>
+            <button id="startGame" style="display: none;" class="control-buttons row2">Start Game</button>
+        </div>
+
+        <div id="gamePropertiesModal" class="modal">
+            <div class="container" id="popup">
+                <span onclick="document.getElementById('gamePropertiesModal').style.display='none'" class="close"
+                    title="Close Modal">&times;</span>
+                <label class="keyField" for="gameName">Game name:</label><br>
+                <input class="keyField" type="text" id="gameName" name="gameName" required><br>
+                <label class="keyField" for="gameLives">Game lives:</label><br>
+                <input class="keyField" type="number" id="gameLives" name="gameLives"><br>
+                <label class="keyField" for="backgroundColor">Background Color:</label><br>
+                <input class="keyField" type="color" id="backgroundColor" name="backgroundColor"><br>
+                <button id="saveGameProperties" class="control-buttons popupbutton">Save Game Properties</button>
+            </div>
+        </div>
+
+        <div id="createSpriteModal" class="modal">
+            <div class="container" id="popup">
+                <span onclick="document.getElementById('createSpriteModal').style.display='none'" class="close"
+                    title="Close Modal">&times;</span>
+                <label class="keyField" for="spriteName">Sprite name:</label><br>
+                <input class="keyField" type="text" id="spriteName" name="spriteName" required><br>
+                <label class="keyField" for="posX">Position X:</label><br>
+                <input class="keyField" type="number" id="posX" name="posX"><br>
+                <label class="keyField" for="posY">Position Y:</label><br>
+                <input class="keyField" type="number" id="posY" name="posY"><br>
+                <label class="keyField" for="height">Height:</label><br>
+                <input class="keyField" type="number" id="height" name="height"><br>
+                <label class="keyField" for="width">Width:</label><br>
+                <input class="keyField" type="number" id="width" name="width"><br>
+                <label class="keyField" for="allowedShapes">Select Shape:</label><br>
+                <select class="keyField" id="allowedShapes">
+                </select>
+                <label class="keyField" for="spriteColor">Color:</label><br>
+                <input class="keyField" type="color" id="spriteColor" name="spriteColor"><br>
+                <label class="keyField" for="allowedActions">Select Actions:</label><br>
+                <select class="keyField" id="allowedActions" multiple>
+                </select>
+                <button id="createSpriteButton" class="control-buttons popupbutton">Create Sprite</button>
+            </div>
+        </div>
+
+
+        <div id="createEventModal" class="modal">
+            <div class="container" id="popup">
+                <span onclick="document.getElementById('createEventModal').style.display='none'" class="close"
+                    title="Close Modal">&times;</span>
+                <label class="keyField" for="obj1">Object1 :</label><br>
+                <select class="keyField" id="obj1">
+                </select>
+                <label class="keyField" for="obj2">Object 2:</label><br>
+                <select class="keyField" id="obj2">
+                </select>
+                <label class="keyField" for="triggerEvent">Trigger Event:</label><br>
+                <select class="keyField" id="triggerEvent">
+                </select>
+                <label class="keyField" for="targetAction">Target Action:(on Object 2)</label><br>
+                <select class="keyField" id="targetAction">
+                </select>
+
+                <button id="createEventButton" class="control-buttons popupbutton">Create Event</button>
+            </div>
+        </div>
+    </div>
+    <script src="../dist/main.js"></script>
+</body>
+
+</html>

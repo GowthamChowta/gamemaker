@@ -1,0 +1,186 @@
+* {
+  margin: 0px;
+  /* background-color: #ffeeaf; */
+  background-color: #274156;
+}
+.game {
+  padding: 0%;
+  margin: 0;
+}
+
+canvas {
+  /* background: linear-gradient(to right, #aa4b6b, #6b6b83, #3b8d99); */
+  background: linear-gradient(to right, #ffb88c, #fce0cf);
+  display: block;
+  margin: 0 auto;
+  margin-top: 30px;
+  border: 2px solid;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.center-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.layout{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color:aqua
+}
+.changeLayout{
+  color:coral
+}
+.checkbox{
+  display: flex;
+  flex-direction: row;
+}
+input[type="checkbox"]{
+  vertical-align: middle;
+}
+.control-buttons {
+  padding: 0.5em;
+  margin: 0.5em;
+  /* width: 100px; */
+  min-width: 80px;
+  height: 40px;
+  width: fit-content;
+
+}
+
+button {
+  background-color: #e7e7e7;
+  color: black;
+  border: 0.16em solid rgba(255, 255, 255, 0);
+  border-radius: 2em;
+  color: white;
+  /* text-align: center; */
+  text-shadow: 2em;
+  background-color: #f14e4e;
+  transition: all 0.2s;
+  box-shadow: 0px 0px 1px 1px grey;
+}
+button:hover {
+  border-color: white;
+}
+button:disabled,
+button[disabled] {
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
+.row2{
+  background-color: #247BA0;
+}
+.row3{
+  background-color: #4CACBC;
+}
+p, #increaseSpeed{
+  font-size: large;
+  color: white;
+  font-weight:200;
+}
+
+.modal{
+  position: fixed;
+  z-index: 1;
+  padding: 30px;
+  left: 0;
+  top: 0;
+  height: fit-content;
+  width: 300px;
+  background-color: rgba(0,0,0,0.6);  
+  /* margin: 100px; */
+  margin: 50px 360px;
+  display: none;
+  /* display: block; */
+  margin-left: 500px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  /* background-color: #fefefe; */
+  background-color: rgba(255,255,255,0.8);
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80px; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  /* color: #000; */
+  font-size: 35px;
+  font-weight: bold;
+  background-color: rgba(0,0,0,0.6);
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+#popup{
+  /* background-color: white; */
+  background-color: rgba(255,255,255,0.8);
+  border-radius: 10px;  
+
+}
+.container{
+  margin: 2px;
+}
+.keyField, b{
+  /* background-color: white; */
+  background-color: #e4e0df;  
+  margin-left: 14px;
+  height: 25px;
+  /* width: 200px; */
+  margin-bottom: 10px;
+}
+
+.gameName{
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  font-size:xx-large;
+  margin-top: 10px;
+  font-weight: 200;
+}
+.popupbutton{
+  font-size: small;
+  height: 30px;
+}
+
+select{
+  display: block;
+}
+#allowedActions{
+  width: 200px;
+  height: 100px;
+}
+#multi-select{
+  font-size: larger;
+  background-color: #e4e0df;
+}
+.gameClock{
+  margin-left: 1160px;
+}
